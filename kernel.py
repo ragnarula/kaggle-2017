@@ -1,3 +1,5 @@
+# taken from https://www.kaggle.com/sentdex/data-science-bowl-2017/first-pass-through-data-w-3d-convnet
+
 import dicom # for reading dicom files
 import os # for doing directory operations 
 import pandas as pd # for some simple data analysis (right now, just to load in the labels data and quickly reference it)

@@ -1,3 +1,5 @@
+# taken from https://www.kaggle.com/sentdex/data-science-bowl-2017/first-pass-through-data-w-3d-convnet
+
 import tensorflow as tf
 import numpy as np
 
@@ -41,6 +43,7 @@ def convolutional_neural_network(x):
 
 
     conv2 = tf.nn.relu(conv3d(conv1, weights['W_conv2']) + biases['b_conv2'])
+
     conv2 = maxpool3d(conv2)
 
     fc = tf.reshape(conv2,[-1, 54080])
